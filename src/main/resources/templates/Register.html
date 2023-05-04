@@ -35,9 +35,10 @@
                         <div class="alert alert-info">
                             Success Register
                         </div>
+                    </div>
 
                         <h1>Register</h1>
-                        <form th:action="@{/register}" method="post" th:object="${user}}">
+                        <form th:action="@{/register}" method="post" th:object="${user}">
                             <div class="form-group">
                                 <label class="form-control" for="name">Name: </label>
                                 <input id="name" type="text" class="form-control" th:field="*{name}" required autofocus="autofocus">
@@ -59,7 +60,6 @@
                                 <span>It you already have an account <a>Login Here</a></span>
                             </div>
                         </form>
-                    </div>
                 </div>
             </div>
         </div>
